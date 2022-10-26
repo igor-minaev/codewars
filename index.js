@@ -28,3 +28,11 @@ function numberToPower(number, power) {
 console.log(numberToPower(4, 2))
 console.log(numberToPower(10, 0))
 
+// 8 kyu - pick a set of first elements
+
+function first(arr, n = 1) {
+    return n === 0 ? [] : arr.slice(0, n)
+}
+
+const arr = ['a', 'b', 'c', 'd', 'e'];
+console.log(first(arr))
