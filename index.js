@@ -60,3 +60,9 @@ function whatday(num) {
             return 'Wrong, please enter a number between 1 and 7'
     }
 }
+
+// 8 kyu - How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+    return yourPoints > classPoints.reduce((acc, el) => acc + el, 0) / classPoints.length
+}
