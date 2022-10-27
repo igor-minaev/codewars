@@ -94,3 +94,11 @@ function getGrade(s1, s2, s3) {
         return 'A'
     }
 }
+
+// 7 kyu - Square Every Digit
+
+function squareDigits(num){
+    return Number(num.toString().split('').map(el=>el * el).join(''))
+}
+
+console.log(squareDigits(45))
