@@ -72,7 +72,25 @@ function betterThanAverage(classPoints, yourPoints) {
 function monkeyCount(n) {
     const arr = []
     for (let i = 1; i <= n; i++) {
-        arr[i-1] = i
+        arr[i - 1] = i
     }
     return arr
+}
+
+// 8 kyu - Grasshopper - Grade book
+
+
+function getGrade(s1, s2, s3) {
+    let score = (s1 + s2 + s3) / 3
+    if ( score < 60) {
+        return 'F'
+    } else if ( score < 70) {
+        return 'D'
+    } else if (score < 80) {
+        return 'C'
+    } else if (score < 90) {
+        return 'B'
+    } else {
+        return 'A'
+    }
 }
