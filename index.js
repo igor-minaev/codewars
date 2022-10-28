@@ -111,3 +111,17 @@ function descendingOrder(n) {
 }
 
 console.log(descendingOrder(3819))
+
+// 7 kyu - Get the Middle Character
+
+function getMiddle(s) {
+    let middleLength = Math.floor(s.length / 2)
+    if (s.length % 2 === 0) {
+        return s.slice(middleLength-1, middleLength + 1)
+    } else {
+        return s.slice(middleLength, middleLength + 1)
+    }
+}
+
+console.log(getMiddle("test"))
+console.log(getMiddle("testing"))
