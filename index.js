@@ -82,9 +82,9 @@ function monkeyCount(n) {
 
 function getGrade(s1, s2, s3) {
     let score = (s1 + s2 + s3) / 3
-    if ( score < 60) {
+    if (score < 60) {
         return 'F'
-    } else if ( score < 70) {
+    } else if (score < 70) {
         return 'D'
     } else if (score < 80) {
         return 'C'
@@ -97,8 +97,17 @@ function getGrade(s1, s2, s3) {
 
 // 7 kyu - Square Every Digit
 
-function squareDigits(num){
-    return Number(num.toString().split('').map(el=>el * el).join(''))
+function squareDigits(num) {
+    return Number(num.toString().split('').map(el => el * el).join(''))
 }
 
 console.log(squareDigits(45))
+
+// 7 kyu - Descending Order
+
+
+function descendingOrder(n) {
+    return Number(n.toString().split('').sort((a, b) => b - a).join(''))
+}
+
+console.log(descendingOrder(3819))
