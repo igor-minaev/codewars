@@ -138,6 +138,14 @@ console.log(getMiddle("testing"))
 }*/
 
 function minMax(arr) {
-   return [Math.min(...arr),Math.min(...arr)]
+    return [Math.min(...arr), Math.min(...arr)]
 }
+
+
+// 7 kyu - Friend or Foe?
+
+function friend(friends) {
+    return friends.filter(fr => fr.length === 4)
+}
+
 
