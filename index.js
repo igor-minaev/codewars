@@ -117,7 +117,7 @@ console.log(descendingOrder(3819))
 function getMiddle(s) {
     let middleLength = Math.floor(s.length / 2)
     if (s.length % 2 === 0) {
-        return s.slice(middleLength-1, middleLength + 1)
+        return s.slice(middleLength - 1, middleLength + 1)
     } else {
         return s.slice(middleLength, middleLength + 1)
     }
@@ -125,3 +125,19 @@ function getMiddle(s) {
 
 console.log(getMiddle("test"))
 console.log(getMiddle("testing"))
+
+// 7 kyu - The highest profit wins!
+
+/*function minMax(arr) {
+    const arrSort = arr.sort((a, b) => a - b)
+    if (arrSort.length === 1) {
+        return [arrSort[0], arrSort[0]]
+    } else {
+        return [arrSort[0], arrSort[arrSort.length - 1]]; // fix me!
+    }
+}*/
+
+function minMax(arr) {
+   return [Math.min(...arr),Math.min(...arr)]
+}
+
