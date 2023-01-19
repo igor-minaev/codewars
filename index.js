@@ -148,4 +148,12 @@ function friend(friends) {
     return friends.filter(fr => fr.length === 4)
 }
 
+// 8 kyu - DNA to RNA Conversion
+
+function DNAtoRNA(dna) {
+    return dna.split('').map(el => el === 'T' ? el = 'U' : el).join('')
+}
+
+console.log(DNAtoRNA("GCAT"))
+
 
