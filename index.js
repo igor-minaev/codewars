@@ -157,3 +157,9 @@ function DNAtoRNA(dna) {
 console.log(DNAtoRNA("GCAT"))
 
 
+// 8 kyu - L1: Set Alarm
+function setAlarm(employed, vacation) {
+    return employed && !vacation
+}
+
+
