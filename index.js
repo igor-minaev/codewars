@@ -176,3 +176,10 @@ const quarterOf = (month) => {
     }
 }
 
+// 8 kyu - Parse nice int from char problem
+
+function getAge(inputString) {
+// return the girl's correct age as an integer. Happy coding :)
+    return parseInt(inputString)
+}
+
