@@ -183,3 +183,19 @@ function getAge(inputString) {
     return parseInt(inputString)
 }
 
+
+var humanYearsCatYearsDogYears = function (humanYears) {
+    // Your code here!
+    return [0, 0, 0].map(el => el = humanYears);
+}
+
+console.log(humanYearsCatYearsDogYears(3))
+
+
+// 7 kyu - List Filtering
+function filter_list(l) {
+    return l.filter(el=>typeof el === 'number')
+}
+
+console.log(filter_list([1,2,'a','b']))
+
