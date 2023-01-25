@@ -184,18 +184,34 @@ function getAge(inputString) {
 }
 
 
-var humanYearsCatYearsDogYears = function (humanYears) {
-    // Your code here!
-    return [0, 0, 0].map(el => el = humanYears);
-}
+
 
 console.log(humanYearsCatYearsDogYears(3))
 
 
 // 7 kyu - List Filtering
 function filter_list(l) {
-    return l.filter(el=>typeof el === 'number')
+    return l.filter(el => typeof el === 'number')
 }
 
-console.log(filter_list([1,2,'a','b']))
+console.log(filter_list([1, 2, 'a', 'b']))
+
+
+// 7 kyu - Exes and Ohs
+function XO(str) {
+    const arr = str.toLowerCase().split('')
+    let countO = 0
+    let countX = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 'o') {
+            countO += 1
+        }
+        if (arr[i] === 'x') {
+            countX += 1
+        }
+    }
+    return countO === countX
+}
+
+
 
