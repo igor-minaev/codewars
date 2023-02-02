@@ -184,11 +184,6 @@ function getAge(inputString) {
 }
 
 
-
-
-console.log(humanYearsCatYearsDogYears(3))
-
-
 // 7 kyu - List Filtering
 function filter_list(l) {
     return l.filter(el => typeof el === 'number')
@@ -212,6 +207,14 @@ function XO(str) {
     }
     return countO === countX
 }
+
+
+// 7 kyu - You're a square!
+
+var isSquare = function (n) {
+    return Number.isInteger(Math.sqrt(n)); // fix me
+}
+
 
 
 
