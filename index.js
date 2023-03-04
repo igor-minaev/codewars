@@ -240,6 +240,11 @@ function getDivisorsCnt(n) {
     return count
 }
 
+// 7 kyu - Shortest Word
+function findShort(s) {
+    return s.split(' ').sort((a, b) => a.length - b.length)[0].length
+}
+
 
 
 
