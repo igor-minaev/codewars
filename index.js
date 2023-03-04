@@ -245,6 +245,11 @@ function findShort(s) {
     return s.split(' ').sort((a, b) => a.length - b.length)[0].length
 }
 
+// 7 kyu - Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+    return this.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')
+};
+
 
 
 
