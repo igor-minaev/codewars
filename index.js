@@ -269,6 +269,12 @@ console.log(binaryArrayToNumber([0, 0, 0, 1]))
 console.log(binaryArrayToNumber([0, 0, 1, 0]))
 console.log(binaryArrayToNumber([1, 0, 1, 1]))
 
+// 7 kyu - Reverse words
+function reverseWords(str) {
+    return str.split(" ").map(w => w.split('').reverse().join('')).join(' ')
+}
+
+console.log(reverseWords('double  spaced  words'))
 
 
 
