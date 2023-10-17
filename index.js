@@ -370,11 +370,11 @@ console.log(countBy(2, 5))
 
 // 8 kyu - Remove exclamation marks
 
-// function removeExclamationMarks(s) {
-//     return s.replace(/!/g,'');
-// }
-//
-// console.log(removeExclamationMarks('Hello World!!'))
+function removeExclamationMarks(s) {
+    return s.replace(/!/g,'');
+}
+
+console.log(removeExclamationMarks('Hello World!!'))
 
 
 
