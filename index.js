@@ -277,5 +277,107 @@ function reverseWords(str) {
 console.log(reverseWords('double  spaced  words'))
 
 
+var number = function (array) {
+    //your awesome code here
+}
+
+// 7 kyu - Reverse a number in any base
+
+function reverseNumber(n, b) {
+    // Input n and b are provided as BigInt values
+    let num = n.toString(2)
+
+    return num
+}
+
+reverseNumber(12, 2)
+
+
+const user = {}
+user.name = 'John'
+user.surname = 'Smith'
+user.name = 'Pete'
+delete user.name
+
+const isEmpty = (obj) => {
+    for (let key in obj) {
+        return false
+    }
+    return true
+}
+
+let schedule = {};
+
+console.log(isEmpty(schedule));
+
+schedule["8:30"] = "get up";
+
+console.log(isEmpty(schedule));
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+}
+// let salaries = {
+//
+// }
+let sum = 0
+for (let key in salaries) {
+    sum += salaries[key]
+}
+
+console.log(sum)
+
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+
+const multiplyNumeric = (obj) => {
+    for (let key in obj) {
+        if (typeof obj[key] === 'number') {
+            obj[key] *= 2
+        }
+    }
+}
+multiplyNumeric(menu);
+
+console.log(menu)
+
+// 8 kyu - Convert boolean values to strings 'Yes' or 'No'.
+
+function boolToWord(bool) {
+    return bool ? 'Yes' : 'No'
+}
+
+console.group(boolToWord(true), boolToWord(false))
+
+// 8 kyu - Count by X
+
+// function countBy(x, n) {
+//     let result = [];
+//     for (let i = x; i <= x * n; i += x) {
+//         result.push(i)
+//     }
+//     return result;
+// }
+//
+// console.log(countBy(1, 10))
+// console.log(countBy(2, 5))
+
+
+// 8 kyu - Remove exclamation marks
+
+// function removeExclamationMarks(s) {
+//     return s.replace(/!/g,'');
+// }
+//
+// console.log(removeExclamationMarks('Hello World!!'))
+
+
+
+
 
 
