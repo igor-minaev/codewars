@@ -371,10 +371,26 @@ console.log(countBy(2, 5))
 // 8 kyu - Remove exclamation marks
 
 function removeExclamationMarks(s) {
-    return s.replace(/!/g,'');
+    return s.replace(/!/g, '');
 }
 
 console.log(removeExclamationMarks('Hello World!!'))
+
+
+// 7 kyu - Credit Card Mask
+
+function maskify(cc) {
+    if (cc.length > 4) {
+        return '#'.repeat(cc.length - 4) + cc.slice(-4)
+    }
+    return cc
+}
+
+console.log(maskify('4556364607935616'))
+console.log(maskify('1'))
+console.log(maskify('Skippy'))
+console.log(maskify(''))
+
 
 
 
