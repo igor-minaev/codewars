@@ -391,6 +391,33 @@ console.log(maskify('1'))
 console.log(maskify('Skippy'))
 console.log(maskify(''))
 
+// 8 kyu - Find Maximum and Minimum Values of a List
+
+var min = function (list) {
+
+    return list.reduce((a, b) => a < b ? a : b);
+}
+
+var max = function (list) {
+
+    return list.reduce((a, b) => a > b ? a : b);
+}
+
+console.log(min([-52, 56, 30, 29, -54, 0, -110]))
+console.log(min([42, 54, 65, 87, 0]))
+console.log(max([4, 6, 2, 1, 9, 63, -134, 566]))
+console.log(max([5]))
+
+// 7 kyu - Friend or Foe?
+
+
+function friend(friends) {
+    return friends.filter(f => f.length === 4)
+}
+
+console.log(friend(["Ryan", "Kieran", "Mark"]))
+console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]))
+
 
 
 
