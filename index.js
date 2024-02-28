@@ -419,14 +419,22 @@ console.log(friend(["Ryan", "Kieran", "Mark"]))
 console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]))
 
 
-
 // 7 kyu - Binary Addition
 function addBinary(a, b) {
     return (a + b).toString(2)
 }
 
-console.log(addBinary(1,1))
-console.log(addBinary(5,9))
+console.log(addBinary(1, 1))
+console.log(addBinary(5, 9))
+
+
+// 7 kyu - Testing 1-2-3
+var number = function (array) {
+    return array.map((el, i) => `${i + 1}: ${el}`)
+}
+
+console.log(number([]))
+console.log(number(["a", "b", "c"]))
 
 
 
