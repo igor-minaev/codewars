@@ -436,6 +436,15 @@ var number = function (array) {
 console.log(number([]))
 console.log(number(["a", "b", "c"]))
 
+// 7 kyu - Sort Numbers
+function solution(nums) {
+    return nums ? nums.sort((a, b) => a - b) : []
+}
+
+console.log(solution([1, 2, 3, 10, 5]))
+console.log(solution([]))
+console.log(solution(null))
+
 
 
 
